@@ -1,4 +1,8 @@
 ### Overview
+Cronjob CR and controller that schedules native batchv1/cronjobs
+The API supports two version of tha API to experiment with K8s conversion webhooks.
+
+
 The tutorial page:
 https://book.kubebuilder.io/cronjob-tutorial/cronjob-tutorial
 Source code of the tutorial:
@@ -26,7 +30,11 @@ More info: https://kind.sigs.k8s.io/docs/user/local-registry/
 |                                          |                                                                                                           |
 
 
-Testing
+### Testing
+Apply v2 of the API
+kubectl apply -f config/samples/kb_v2_cronjob.yaml
+or alternatively v2 of the API
+kubectl apply -f config/samples/kb_v1_cronjob.yaml
 
 k get pod --all-namespaces -> find controller pod -> k logs -n <controller-namespace> <pod-name>
 k get jobs -> verify jobs are scheduled
