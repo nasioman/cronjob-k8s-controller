@@ -1,6 +1,6 @@
 ### Overview
-Cronjob CR and controller that schedules native batchv1/cronjobs
-The API supports two version of tha API to experiment with K8s conversion webhooks.
+Cronjob CR and controller that schedules native batchv1/cronjobs.
+The API supports two versions of tha API to experiment with K8s conversion webhooks.
 
 
 The tutorial page:
